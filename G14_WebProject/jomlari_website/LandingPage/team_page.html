@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+
+    <meta charset = "UTF-8">
+    <title> Jom Lari 2024 </title>
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+    <link rel="stylesheet" href="../Style/landing_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/all.min.css">
+
+</head>
+<body>
+
+<!-- Main Page -->
+
+   <section class="sub-header">
+        <nav>
+            <a href="../index.html">
+                <img src="../Images/Jom_Lari white.png" style="margin-left: -80px;">
+            </a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li> <a href="../index.html"> HOME </a> </li>
+                    <li> <a href="./about_page.html"> ABOUT </a> </li>
+                    <li> <a href="./team_page.html"> OUR TEAM </a> </li>
+                    <li> <a href="./contact_page.html"> CONTACT US </a> </li>
+                    <li> <a href="../User/user_signup.php"> SIGN UP </a> </li>
+                    <li> <a href="../User/user_login.php"> LOGIN </a> </li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()" ></i>
+        </nav>
+
+        <h1> Meet Our Team </h1>
+
+   </section>
+
+   <!------- OUR TEAM SECTION ------->
+
+   <!-- Inside the Our Team section -->
+<section class="our-team">
+    <h2> The Faces Behind</h2><img src="../Images/Jom_Lari white.png">
+
+    <!-- Container for Team Members -->
+    <div class="team-members">
+
+        <!-- Individual Team Members -->
+        <div class="team-member">
+            <img src="../Images/azfar.jpg" alt="Team Member 1">
+            <h3> Azfar Nazrin Affandi </h3>
+            <p> Position: UI/UX Designer </p>
+        </div>
+
+        <div class="team-member">
+            <img src="../Images/ilham.jpg" alt="Team Member 2">
+            <h3>Ilham Hadi Shamsul </h3>
+            <p> Position: Form Builder </p>
+        </div>
+
+        <div class="team-member">
+            <img src="../Images/ayman.jpg" alt="Team Member 3">
+            <h3> Ayman Fikry Asmajuda </h3>
+            <p> Position: Full-Stack Developer </p>
+        </div>
+
+    </div>
+</section>
+
+
+
+
+<!-- FOOTER AT BOTTOM PAGE -->
+   <section class="footer">
+    <img src="../Images/Jom_Lari white.png">
+    <p> It is more than a running event. It's a celebration of health, unity, and joy.</br> 
+        Join us in making 2024 a year of personal wellness and community achievement.</br> Lace up your 
+        shoes and be part of our spirited journey!</p>
+
+    <div class="icons">
+        <i class="fa-brands fa-square-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-square-x-twitter"></i>
+    </div>
+    <p> Made with <i class="fa-regular fa-heart"></i> <i class="fa-solid fa-users"></i> by Azfar, Ilham & Ayman</p>
+
+    <p>
+        &copy; 2023 Jom Lari 2024. All rights reserved.
+    </p>
+    </section>
+
+
+
+   <!---- JavaScript for Hide menu and Open Menu in mobile viewport ----->
+   <script>
+    var navLinks = document.getElementById("navLinks");
+ 
+    function showMenu() {
+      navLinks.style.right = "0";
+    }
+ 
+    function hideMenu() {
+      navLinks.style.right = "-200px";
+    }
+    </script>
+
+</body>
+</html>

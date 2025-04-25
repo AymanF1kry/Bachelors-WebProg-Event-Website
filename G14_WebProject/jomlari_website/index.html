@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+
+    <meta charset = "UTF-8">
+    <title> Jom Lari 2024 </title>
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+    <link rel="stylesheet" href="./Style/landing_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/all.min.css">
+
+</head>
+<body>
+
+<!-- Main Page -->
+
+   <section class="header" id="header">
+        <nav>
+            <a href="./index.html">
+                <img src="./Images/Jom_Lari white.png" style="margin-left: -80px;">
+            </a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li> <a href="./index.html"> HOME </a> </li>
+                    <li> <a href="./LandingPage/about_page.html"> ABOUT </a> </li>
+                    <li> <a href="./LandingPage/team_page.html"> OUR TEAM </a> </li>
+                    <li> <a href="./LandingPage/contact_page.html"> CONTACT US </a> </li>
+                    <li> <a href="./User/user_signup.php"> SIGN UP </a> </li>
+                    <li> <a href="./User/user_login.php"> LOGIN </a> </li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()" ></i>
+        </nav>
+
+    <div class="text-box">
+        <img src="./Images/Jom_Lari white.png">
+        <h1> Jom Lari 2024!</h1>
+        <p>
+            Welcome to Jom Lari 2024 –<br>Where the joy of running meets 
+            the thrill of 2024. </br>Join our spirited community, chase fitness goals, 
+            and create lasting memories. 
+            Ready to run? Let’s make 2024 our year, Jom Lari!
+        </p>
+        <a href="./LandingPage/about_page.html" class="hero-btn">Visit Us To Know More</a>
+
+
+    </div>
+   </section>
+
+   <!-- About Jom Lari 2024 Secction -->
+
+   <section class="about">
+        <h2> Welcome to Jom Lari 2024, where passion meets the pavement!</h2>
+            <div class="mission">
+                <p>At Jom Lari, we believe in the power of running to transform lives and build communities. With a shared commitment to health, wellness, and the thrill of the run, our annual event has become a celebration of active living.</p>
+            </div>
+
+        <h2 class="underline-text">Our Mission</h2>
+            <div class="mission">
+                <p> Inspiring individuals to embrace a healthier lifestyle through the joy of running. Jom Lari is not just a race; it's a journey towards personal wellness, community unity, and achieving new milestones together.</p>
+            </div>
+    
+        <h1 class="underline-text">Why Jom Lari?</h1>
+        <div class="row">
+            <div class="mission">
+                <h3 class="underline-text">Inclusive Community</h3>
+                <p>Whether you're a seasoned marathoner or taking your first steps in the running world, Jom Lari welcomes participants of all levels and backgrounds.</p>
+            </div>
+
+            <div class="mission">
+                <h3 class="underline-text">Beautiful Courses</h3>
+                <p>Experience the scenic routes carefully curated to showcase the best of our vibrant city and create unforgettable memories.</p>
+            </div>
+
+            <div class="mission">
+                <h3 class="underline-text">Wellness Celebration</h3>
+                <p> Beyond the finish line, enjoy wellness activities, music, and a festive atmosphere that celebrates achievements, big and small.</p>
+            </div>
+        </div>
+        <h1> Join us at Jom Lari 2024, lace up your shoes, and let the journey begin!</h1></br></br>
+   </section>
+
+
+<!-- FOOTER AT BOTTOM PAGE -->
+   <section class="footer">
+    <img src="./Images/Jom_Lari white.png">
+    <p> It is more than a running event. It's a celebration of health, unity, and joy.</br> 
+        Join us in making 2024 a year of personal wellness and community achievement.</br> Lace up your 
+        shoes and be part of our spirited journey!</p>
+
+    <div class="icons">
+        <i class="fa-brands fa-square-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-square-x-twitter"></i>
+    </div>
+    <p> Made with <i class="fa-regular fa-heart"></i> <i class="fa-solid fa-users"></i> by Azfar, Ilham & Ayman</p>
+
+    <p>
+        &copy; 2023 Jom Lari 2024. All rights reserved.
+    </p>
+    </section>
+
+
+
+   <!---- JavaScript for Hide menu and Open Menu in mobile viewport ----->
+   <script>
+    var navLinks = document.getElementById("navLinks");
+ 
+    function showMenu() {
+      navLinks.style.right = "0";
+    }
+ 
+    function hideMenu() {
+      navLinks.style.right = "-200px";
+    }
+    </script>
+    
+    
+
+
+
+
+</body>
+</html>

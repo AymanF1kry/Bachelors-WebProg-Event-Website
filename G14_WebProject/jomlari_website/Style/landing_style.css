@@ -1,0 +1,427 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(163, 158, 158, 0.8), rgba(163, 158, 158, 0.8)), url("../Images/lari.png");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    width: 250px;
+    position: left;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.nav-links ul li::after{
+     content: '';
+     width: 0px;
+     height: 2px;
+     background: black;
+     display: block;
+     margin: auto;
+     transition: 0.5s;
+
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.text-box {
+    width: 90%;
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box h1 {
+    font-size: 44px;
+
+}
+
+.text-box p {
+    margin: 10px 0 40px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 12px 34px;
+    font-size: 13px;
+    background-color: white;
+    position: relative;
+    cursor: pointer;
+    font-style: bold;
+}
+
+.hero-btn:hover {
+    border: 1px solid black;
+    background: black;
+    transition: 1s;
+    color: white;
+}
+
+nav .fa {
+   display: none; 
+}
+
+
+/* -- This is for phone view -- */
+@media(max-width: 700px){  
+    .text-box h1 {
+        font-size: 22px;
+    }
+
+    nav img {
+        width: 228px; /* Adjust the width as needed */
+        position: absolute;
+        top: 10px; /* Adjust the top position as needed */
+        left: 50px; /* Adjust the left position as needed */
+    }
+    .nav-links ul li {
+        display: block;
+    }
+
+    .nav-links {
+        position: fixed;
+        background: lightblue;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+
+    nav .fa{
+        display: block;
+        color: black;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    .nav-links ul{
+        padding: 30px;
+
+    }
+
+
+}
+
+/*---- CSS for About Us (HOME PAGE) ----*/
+
+.about {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.h1 {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+p {
+    color: black;
+    font-size: 14px;
+    line-height: 22px;
+    padding: 10px;
+
+}
+
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mission {
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5% ;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.underline-text {
+    text-decoration: underline;
+  }
+
+.h3 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.mission:hover {
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+
+/* ---- CSS For ABOUT US HOME PAGE at home page IN MOBILE VIEW -----*/
+@media(max-width: 700px){ 
+    .row {
+        flex-direction: column;
+    }
+}
+
+/*---- CSS for footer ----*/
+
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    background-color: beige ;
+    color: black; 
+}
+
+.footer h4 {
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.icons .fa-brands {
+    color: black;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+
+.fa-regular.fa-heart {
+    color: #f44336;
+}
+
+.header.scrolled {
+    position: fixed;
+    top: 0;
+}
+
+
+
+  /* ---- CSS for About us page ---- */
+  .sub-header {
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(163, 158, 158, 0.7), rgba(163, 158, 158, 0.7)), url("../Images/lari.png");
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: black;
+}
+
+.about-us {
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.about-col {
+    flex-basis: 48%;
+    padding: 30px 2px;
+    text-align: justify;
+}
+
+.about-col h1 {
+    border-top: 1px solid #333; /* Horizontal line color */
+    padding-top: 15px;
+    margin-top: 15px;
+}
+
+.about-col p {
+    border-bottom: 1px solid #333; /* Horizontal line color */
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.about-col img {
+    width: 100%;
+}
+
+.event-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.event-info .about-col {
+    flex-basis: 48%;
+}
+
+.event-info .about-col p {
+    border-bottom: 1px solid #333; /* Horizontal line color */
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+/* Additional styling for better visual appeal */
+.event-info h1,
+.about-col h1 {
+    margin-bottom: 15px;
+}
+
+.event-info b,
+.about-col b {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+
+
+/* Media view for about us */
+
+@media only screen and (max-width: 768px) {
+    .sub-header h1 {
+        margin-top: 50%; /* Adjust this value to your liking */
+    }
+
+    .about-us h1 {
+        margin-top: 30px; /* Adjust this value to your liking */
+    }
+
+    .nav-links {
+        top: 0;
+        right: 0;
+    }
+
+    /* Additional styles for the button */
+    .fa-bars {
+        top: 15px; /* Adjust this value to your liking */
+        right: 15px; /* Adjust this value to your liking */
+        transform: none;
+    }
+}
+
+/* CSS for contact  us */
+
+.location {
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+}
+
+.location iframe {
+    width: 100%;
+}
+
+.contact-us {
+    width: 80%;
+    margin: auto;
+}
+
+.contact-col {
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+
+.contact-col div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.contact-col div .fa-solid {
+    font-size: 28px;
+    color: black;
+    margin: 10px;
+    margin-right: 30px;
+}
+
+.contact-col div p {
+    padding: 0;
+
+}
+
+.contact-col div h5 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: black;
+    font-weight: 400;
+}
+
+/* CSS for COntact US form */
+
+.contact-col input, .contact-col textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid black;
+}
+
+/* CSS FOR OUR TEAM */
+/* Updated styles for the Our Team section */
+/* Updated styles for the Our Team section */
+/* Updated styles for the Our Team section */
+.our-team {
+    width: 80%;
+    margin: auto;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.team-members {
+    display: flex;
+    justify-content: space-around;
+}
+
+.team-member {
+    width: 150px;
+    margin-top: 30px;
+}
+
+.team-member img {
+    width: 100%; /* Make the image fill the square */
+    border-radius: 10px;
+    transition: transform 0.3s; /* Add transition for the hover effect */
+}
+
+.team-member:hover img {
+    transform: scale(1.1); /* Enlarge the image on hover */
+}
+
+
+

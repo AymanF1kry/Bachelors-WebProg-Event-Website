@@ -1,0 +1,149 @@
+body {
+      font-family: 'Ubuntu', sans-serif;
+      background-image: url('../Images/track1bw.png'); /* Replace 'your-background-image.jpg' with the actual image file path */
+      background-size: cover;
+      background-position: center;
+      text-align: left;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    label {
+    margin-left: 2.5%;
+    }
+
+    .table-container{
+      width: 900px;
+      padding: 20px;
+      border-radius: 50px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      line-height: normal;
+      background-color: #fff;
+    }
+
+    .login-container {
+      width: 500px;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 50px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .login-container form .text-msg{
+      margin:10px 0;
+      display: block;
+      background: #36454f;
+      color: #fff;
+      border-radius:5px;
+      font-size: 15;
+      padding: 10px;
+      text-align: center;
+    }
+	
+	.text1 {
+      font-style: italic;
+	    font-size: 13px;
+      text-align: center;
+	    border-bottom: 2px solid #ccc;
+      display: block;
+      margin-bottom: 15px;  
+      padding-bottom: 15px;
+    }
+
+    h2 {
+      font-family: 'Ubuntu', sans-serif;
+      margin-bottom: 20px;
+      background-color: #343434;
+      color: white;
+      padding: 18px;
+      border-radius: 25px;
+      text-align: center;
+    }
+
+    input[type=text], input[type=password] {
+      width: calc(100% - 30px);
+      padding: 15px;
+      margin: 5px 0 22px 0;
+      display: inline-block;
+      border: none;
+      background: #f1f1f1;
+      border-radius: 15px;
+    }
+
+    input[name=valueToSearch]{
+      width: 380px;
+      padding: 15px;
+      margin: 5px 0 22px 0;
+      display: inline-block;
+      border: none;
+      background: #f1f1f1;
+      border-radius: 15px;
+    }
+
+    input[type=text]::placeholder,
+    input[type=password]::placeholder {
+      color: #888;
+    }
+
+    button {
+      background-color: white;
+      color: #343434;
+      padding: 15px 20px;
+      border-color: #343434;
+      border-radius: 25px;
+      cursor: pointer;
+	    font-weight: bold;
+      border-style:double;
+    }
+
+    button:hover {
+      background-color: #343434;
+      color: white;
+    }
+
+    .create-account-link {
+      margin-top: 15px;
+      font-size: 14px;
+      color: #333;
+    }
+
+    .create-account-link a {
+      color: #343434;
+      text-decoration: none;
+      font-weight: bolder;
+    }
+
+    .create-account-link a:hover {
+      text-decoration: underline;
+    }
+
+    table{
+      border-collapse: collapse;
+      width: 100%;
+      color: white;
+      font-family: Ubuntu;
+      font-size: 15px;
+      text-align: center;
+      border: 1px black;
+  }
+
+  th{
+    background-color: black;
+    color: white;   
+    height: 70px;
+}
+
+tr:nth-child(even){
+    background-color: #f2f2f2;
+    color: black;
+    height: 70px;
+}
+
+tr:nth-child(odd){
+    background-color: #4f5455;
+    color: white;
+    height: 70px;
+}

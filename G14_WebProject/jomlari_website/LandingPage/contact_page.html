@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+
+    <meta charset = "UTF-8">
+    <title> Jom Lari 2024 </title>
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+    <link rel="stylesheet" href="../Style/landing_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/all.min.css">
+
+</head>
+<body>
+
+<!-- Main Page -->
+
+   <section class="sub-header">
+        <nav>
+            <a href="../index.html">
+                <img src="../Images/Jom_Lari white.png" style="margin-left: -80px;">
+            </a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li> <a href="../index.html"> HOME </a> </li>
+                    <li> <a href="./about_page.html"> ABOUT </a> </li>
+                    <li> <a href="./team_page.html"> OUR TEAM </a> </li>
+                    <li> <a href="./contact_page.html"> CONTACT US </a> </li>
+                    <li> <a href="../User/user_signup.php"> SIGN UP </a> </li>
+                    <li> <a href="../User/user_login.php"> LOGIN </a> </li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()" ></i>
+        </nav>
+
+        <h1> Contact Us</h1>
+   </section>
+
+   <!------- CONTACT US SECTION ------->
+
+<section class="location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.432141470454!2d101.72812857497044!3d2.9774900969986087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cdcbd32f300b1d%3A0xfd29fd7e373dab16!2sUniversiti%20Tenaga%20Nasional%20(UNITEN)!5e0!3m2!1sen!2skr!4v1704607597738!5m2!1sen!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+
+<section class="contact-us">
+
+    <div class="row">
+        <div class="contact-col">
+            <div>
+                <i class="fa-solid fa-house"></i>
+                <span>
+                    <h5> UNITEN, PUTRAJAYA, MALAYSIA</h5>
+                </span>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-phone"></i>
+                <span>
+                    <h5> +609-2804-2003</h5>
+                    <p> Monday - Friday, 10 AM - 5 PM</p>
+                </span>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-envelope"></i>
+                <span>
+                    <h5> UNI10@uniten.edu.my</h5>
+                    <p> Email us your query</p>
+                </span>
+            </div>
+        </div>
+
+        <div class="contact-col">
+
+            <form name = contact_form action="./contact_form.php" method="post">
+                <input type="text" name="name" placeholder="Enter Your Name" required>
+                <input type="email" name="email" placeholder="Enter Your Email" required>
+                <input type="text" name="subject" placeholder="Enter Your Subject" required>
+                <textarea rows="8" name="message" placeholder="Message" required></textarea>
+                <button type="submit" class="hero-btn"> Send Message</button>
+            </form>
+            
+        </div> 
+    </div> 
+
+</section>
+  
+
+
+
+<!-- FOOTER AT BOTTOM PAGE -->
+   <section class="footer">
+    <img src="../Images/Jom_Lari white.png">
+    <p> It is more than a running event. It's a celebration of health, unity, and joy.</br> 
+        Join us in making 2024 a year of personal wellness and community achievement.</br> Lace up your 
+        shoes and be part of our spirited journey!</p>
+
+    <div class="icons">
+        <i class="fa-brands fa-square-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-square-x-twitter"></i>
+    </div>
+    <p> Made with <i class="fa-regular fa-heart"></i> <i class="fa-solid fa-users"></i> by Azfar, Ilham & Ayman</p>
+
+    <p>
+        &copy; 2023 Jom Lari 2024. All rights reserved.
+    </p>
+    </section>
+
+
+
+   <!---- JavaScript for Hide menu and Open Menu in mobile viewport ----->
+   <script>
+    var navLinks = document.getElementById("navLinks");
+ 
+    function showMenu() {
+      navLinks.style.right = "0";
+    }
+ 
+    function hideMenu() {
+      navLinks.style.right = "-200px";
+    }
+    </script>
+
+</body>
+</html>

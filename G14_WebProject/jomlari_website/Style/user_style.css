@@ -1,0 +1,144 @@
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background-image: url("../Images/running_blue.png"); /* Replace 'your-background-image.jpg' with the actual image file path */
+    background-size: cover;
+    background-position: center;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+  }
+
+  label { /*Used in signinpage, loginpage, registereventpage*/
+    margin-left: 2.5%;
+  }
+
+  .login-container { /*For the container of all 3 pages*/
+
+    width: 450px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .login-container form .text-msg{
+    margin:10px 0;
+    display: block;
+    background:#88b4c6;
+    color: #fff;
+    border-radius:5px;
+    font-size: 15;
+    padding: 10px;
+    text-align: center;
+  }
+
+
+
+  
+  .text1 { /*Used in [loginpage] for "Log in to your account to join our events"*/
+    font-style: italic;
+    font-size: 13px;
+    text-align: center;
+
+    /* To make underline below */
+    border-bottom: 2px solid #ccc;
+    display: block;
+    margin-bottom: 15px;  
+    padding-bottom: 15px; 
+  }
+  
+  .dropdown-styling { /*Used in [registereventpage] for dropdown options */
+    color: #888;
+    text-align: left;
+    width: 450px;
+    padding: 15px;
+    margin: 5px 0 15px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+    border-radius: 15px; /*To make round edges at the border*/
+  }
+
+  h2 { /*Used in all 3 pages*/
+    font-family: 'Ubuntu', sans-serif;
+    margin: 10px;
+    background-color: #3CACAE;
+    color: white;
+    padding: 10px;
+    border-radius: 25px;
+    text-align: center;
+  }
+
+  input[type=text], input[type=password] { /*To style the input text and password*/
+    width: calc(100% - 30px);
+    padding: 15px;
+    margin: 5px 0 15px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+    border-radius: 15px; /*To make round edges at the border*/
+  }
+
+  input[type=text]::placeholder,
+  input[type=password]::placeholder { /*To style the placeholder text*/
+    color: #888;
+  }
+
+  button { /*To style the button*/
+    background-color: #ffff;
+    color: #3CACAE;
+    border-color: #3CACAE;
+    padding: 15px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    border-style:double;
+    font-weight: bold;
+    align-items: center;
+  }
+
+  button:hover {
+    background-color: #3CACAE;
+    color: #ffff;
+  }
+
+  .create-account-link { /*Text for hyperlink styling*/
+    margin-top: 15px;
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+  }
+
+  .create-account-link a { /*Hyperlink styling inside anchor tag*/
+    color: #3CACAE;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  .create-account-link a:hover {
+    text-decoration: underline;
+  }
+
+  .forgot-password-link { /*"forgot password?" text styling*/
+    /*Only used in login page*/
+    margin-top: 1px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #333;
+    text-align: right;
+  }
+
+  .forgot-password-link a { /*styling for anchor tag*/
+    /*Only used in login page*/
+    color: #3CACAE;
+    text-decoration: none;
+    text-align: right;
+  }
+
+  .forgot-password-link a:hover {
+    /*Only used in login page*/
+    text-decoration: underline;
+  }
