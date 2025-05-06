@@ -1,11 +1,10 @@
 # Jom Lari 2024 – Running Event Website
 
-![HTML](https://img.shields.io/badge/HTML-Used-orange?logo=html5)
-![CSS](https://img.shields.io/badge/CSS-Used-blue?logo=css3)
-![JavaScript](https://img.shields.io/badge/JavaScript-Used-yellow?logo=javascript)
-![PHP](https://img.shields.io/badge/PHP-Used-purple?logo=php)
-![MySQL](https://img.shields.io/badge/MySQL-Database-informational?logo=mysql)
-![Project](https://img.shields.io/badge/Project-Type_Group_Project-success)
+![Programming: HTML](https://img.shields.io/badge/Programming-HTML-orange?logo=html5)
+![Programming: CSS](https://img.shields.io/badge/Programming-CSS-blue?logo=css3)
+![Programming: JavaScript](https://img.shields.io/badge/Programming-JavaScript-yellow?logo=javascript)
+![Programming: PHP](https://img.shields.io/badge/Programming-PHP-purple?logo=php)
+![Database: MySQL](https://img.shields.io/badge/Database-MySQL-informational?logo=mysql)
 
 > A running event management website created as part of the **Web Programming** course during my Bachelor's degree. This project is designed to assist event administrators in managing running event registrations effectively while offering participants a convenient registration platform. It was developed in a group using **WampServer** (localhost) with **HTML, CSS, JavaScript, PHP**, and **MySQL**.
 
